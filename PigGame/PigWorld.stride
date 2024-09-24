@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="PigWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="private" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve">Method to prepare the world - random burgers will spawn, pig will spawn in center and snake will spawn in bottom right corner at the start of the game</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Burger" type-java="Burger" name="burger" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="burger.setLocation(104,36)" expression-java="burger.setLocation(104, 36)" enable="true"/>
+                <call expression="burger.setLocation(117,36)" expression-java="burger.setLocation(117, 36)" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger2" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger2,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger2, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger3" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger3,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger3, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger4" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger4,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger4, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger5" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger5,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger5, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger6" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger6,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger6, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger7" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger7,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger7, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger8" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger8,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger8, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Burger" type-java="Burger" name="burger9" value="new Burger()" value-java=" new Burger()" enable="true"/>
+                <call expression="addObject(burger9,Greenfoot.getRandomNumber(500),Greenfoot.getRandomNumber(500))" expression-java="addObject(burger9, Greenfoot.getRandomNumber(500), Greenfoot.getRandomNumber(500))" enable="true"/>
+                <variable type="Snake" type-java="Snake" name="snake" value="new Snake()" value-java=" new Snake()" enable="true"/>
+                <call expression="addObject(snake,524,349)" expression-java="addObject(snake, 524, 349)" enable="true"/>
+                <variable type="Pig" type-java="Pig" name="pig" value="new Pig()" value-java=" new Pig()" enable="true"/>
+                <call expression="addObject(pig,315,206)" expression-java="addObject(pig, 315, 206)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
